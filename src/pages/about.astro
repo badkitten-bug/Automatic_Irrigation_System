@@ -1,8 +1,7 @@
 ---
-import Header from '../components/Header.astro';
-import '../styles/global.css';
-import Footer from '../components/Footer.astro';
-
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
 const pageTitle = "Sobre mi";
 const identity = {
   firstName: "Steve",
@@ -28,26 +27,25 @@ const textCase = "uppercase";
 ---
 
 <html lang="es">
-    
   <head>
-    <Header />
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{pageTitle}</title>
 
-    <style define:vars={{skillColor, fontWeight, textCase}}>
-        h1 {
-          color: purple;
-          font-size: 4rem;
-        }
-        .skill {
-          color: var(--skillColor);
-          font-weight: var(--fontWeight);
-          text-transform: var(--textCase);
-        }
-      </style>
+    <style define:vars={{ skillColor, fontWeight, textCase }}>
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+      .skill {
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
+      }
+    </style>
   </head>
   <body>
+    <Header />
     <h1>{pageTitle}</h1>
     <h2>... ¡y mi nuevo sitio Astro!</h2>
 
@@ -89,5 +87,8 @@ const textCase = "uppercase";
       )
     }
     <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
