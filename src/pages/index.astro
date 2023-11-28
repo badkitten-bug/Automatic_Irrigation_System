@@ -1,10 +1,31 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Greeting from "../components/Greeting";
-const pageTitle = "Página de inicio";
+const pageTitle = "SISTEMA DE RIEGO AUTOMÁTICO";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Mi impresionante subtítulo del blog</h2>
-  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+  <h2>Introducción</h2>
+  <p>
+    El sistema de riego automático es un proyecto que busca automatizar el riego
+    de un cultivo, en este caso, de un huerto urbano. El sistema se basa en un
+    sensor de humedad que mide la humedad del suelo y, en función de esta,
+    activa o desactiva la bomba de agua que riega el cultivo.
+  </p>
+  <p>
+    El sistema se ha desarrollado con el objetivo de que sea lo más sencillo
+    posible, tanto en su construcción como en su uso. Para ello, se ha utilizado
+    un microcontrolador ESP32, que es un microcontrolador de bajo coste y que
+    cuenta con conectividad WiFi, lo que permite que el sistema pueda ser
+    controlado desde cualquier dispositivo con conexión a internet.
+  </p>
+  <p>
+    El sistema cuenta con una página web que permite controlar el sistema de
+    riego, así como visualizar los datos que se han ido recogiendo. Además, se
+    ha desarrollado una aplicación móvil que permite controlar el sistema de
+    riego desde el móvil.
+  </p>
+
+  
+  <Greeting client:load messages={["Hello", "Hi", "Hola", "Bienvenido"]} />
 </BaseLayout>
