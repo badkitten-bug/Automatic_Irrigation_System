@@ -6,7 +6,7 @@ const pageTitle = "INDICE";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <p>Aquí es donde publicaré sobre mi viaje de aprendizaje de Astro.</p>
+  <p>Aquí encontraremos la documentacion de forma dinamica.</p>
   <ul>
     {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
   </ul>
