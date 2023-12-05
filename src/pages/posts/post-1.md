@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Documentacion'
-pubDate: 28/11/2023
-description: ''
+pubDate: 2023-11-28
+description: 'En este documento revisaremos todo el trabajo realizado en el proyecto de "Sistema de Riego Automático" utilizando Tinkercad y Arduino.'
 author: 'Steve Gomez'
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
@@ -57,7 +57,7 @@ El presente proyecto establece un enfoque innovador para abordar los desafíos a
 
 ## Planteamiento del problema
 
-El proyecto de "Sistema de Riego Automático" busca abordar una serie de problemas existentes en la agricultura, entre los que se incluyen:
+Este proyecto presenta un enfoque innovador para abordar los desafíos actuales en la agricultura mediante la creación de un "Sistema de Riego Automático" utilizando Tinkercad y Arduino.
 
 ### Problemas climáticos:
 
